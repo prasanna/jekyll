@@ -47,6 +47,7 @@ require 'jekyll/errors'
 require 'jekyll/related_posts'
 require 'jekyll/cleaner'
 require 'jekyll/entry_filter'
+require 'jekyll/site_meta_data'
 
 # extensions
 require 'jekyll/plugin'
