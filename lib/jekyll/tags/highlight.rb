@@ -41,10 +41,11 @@ eos
       end
 
       def render(context)
+        code = super.to_s.strip
         if context.registers[:site].pygments
-          render_pygments(context, super)
+          render_pygments(context, code)
         else
-          render_codehighlighter(context, super)
+          render_codehighlighter(context, code)
         end
       end
 
