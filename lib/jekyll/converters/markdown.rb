@@ -17,6 +17,8 @@ module Jekyll
             RDiscountParser.new @config
           when 'maruku'
             MarukuParser.new @config
+          when 'rubymark'
+            RubyMarkParser.new @config
           else
             STDERR.puts "Invalid Markdown processor: #{@config['markdown']}"
             STDERR.puts "  Valid options are [ maruku | rdiscount | kramdown | redcarpet ]"
